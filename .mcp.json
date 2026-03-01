@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "local-semantic-search": {
+      "command": "uv",
+      "args": ["run", "--directory", "${CLAUDE_PLUGIN_ROOT}/mcp_server", "python", "server.py"]
+    }
+  }
+}

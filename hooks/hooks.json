@@ -1,0 +1,28 @@
+{
+  "description": "Auto-update semantic index via debounced file watcher",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/start-watcher.sh",
+            "timeout": 5,
+            "background": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/flush-watcher.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

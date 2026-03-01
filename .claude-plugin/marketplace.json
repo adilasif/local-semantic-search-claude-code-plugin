@@ -1,0 +1,15 @@
+{
+  "name": "local-semantic-search",
+  "description": "Semantic code search for Claude Code using Qdrant and local embeddings",
+  "owner": {
+    "name": "Local Development"
+  },
+  "plugins": [
+    {
+      "name": "local-semantic-search",
+      "version": "0.2.0",
+      "source": "./",
+      "description": "Semantic code search using Qdrant and local embeddings"
+    }
+  ]
+}
